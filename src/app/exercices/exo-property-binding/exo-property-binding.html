@@ -1,0 +1,54 @@
+<div class="card bg-base-100 shadow-xl w-96">
+  
+  <figure>
+    <img [src]="user.image" alt="profile banner" class="w-full h-40 object-cover" />
+  </figure>
+
+  <div class="card-body">
+
+    <!-- Nom -->
+    <h2 class="card-title text-primary">
+      {{ user.firstName }} {{ user.lastName }}
+    </h2>
+
+    <!-- Status -->
+    <p>
+      <strong>Status :</strong>
+      <span 
+        [class.text-success]="user.status === 'Online'"
+        [class.text-error]="user.status === 'Offline'"
+      >
+        {{ user.status }}
+      </span>
+    </p>
+
+    <!-- Age -->
+    <p><strong>Âge :</strong> {{ user.age }}</p>
+
+    <!-- Bio -->
+    <p>
+      <strong>Bio :</strong> {{ user.bio }}
+    </p>
+
+    <!-- Réputation (ternaire) -->
+    <p>
+      <strong>Réputation :</strong>
+      <span>
+        {{ user.reputation === 'cool' ? 'Cool ' : 'Ringard ' }}
+      </span>
+    </p>
+
+    <!-- Lien GitHub -->
+    <div class="card-actions justify-end mt-2">
+      <a 
+        [href]="githubLink"
+        target="_blank"
+        class="btn btn-primary btn-sm"
+      >
+        GitHub
+      </a>
+    </div>
+
+  </div>
+
+</div>
