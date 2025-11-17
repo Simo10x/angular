@@ -21,8 +21,9 @@ import { CommonModule } from '@angular/common';
 })
 export class Exercices {
   exercices = [
-    { name: 'Exo Property Binding', path: 'exo-property-binding' }
-    // tu peux ajouter d'autres exercices ici
+    { name: 'Exo Property Binding', path: 'exo-property-binding' },
+    // Je peux ajouter d'autres exercices ici
+    { name: 'Exo Event Binding', path: 'exo-event-binding' }
   ];
 
   constructor(private router: Router) {}

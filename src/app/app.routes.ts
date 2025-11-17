@@ -33,6 +33,10 @@ export const routes: Routes = [
     path:'exercices/exo-property-binding',
     loadComponent:()=>import('./exercices/exo-property-binding/exo-property-binding').then(m=>m.ExoPropertyBinding)
   },
+  { 
+    path:'exercices/exo-event-binding',
+    loadComponent:()=>import('./exercices/exo-event-binding/exo-event-binding').then(m=>m.ExoEventBinding)
+  },
     //! ---------- Le système page Not Found ---------------------------------------------------------------------
   // Dans Angular il faut placer à la fin le path:'**'
   // ! check la doc si ya meilleure manière de faire ou plus simple ? aller explorer analog ?
