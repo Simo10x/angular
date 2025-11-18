@@ -24,7 +24,8 @@ export class Exercices {
     { name: 'Exo Property Binding', path: 'exo-property-binding' },
     // Je peux ajouter d'autres exercices ici
     { name: 'Exo Event Binding', path: 'exo-event-binding' },
-    { name: 'Exo Tp Binding', path: 'exo-tp-binding' }
+    { name: 'Exo Tp Binding', path: 'exo-tp-binding' },
+    { name: 'Exo Dynamic Styling (ngClass & ngStyle)', path: 'exo-dynamic-styling-ng-class-ng-style' }
 
   ];
 
