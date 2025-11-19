@@ -46,6 +46,10 @@ export const routes: Routes = [
     loadComponent:()=>import('./exercices/exo-dynamic-styling-ng-class-ng-style/exo-dynamic-styling-ng-class-ng-style').then(m=>m.ExoDynamicStylingNgClassNgStyle)
 
   },
+  {
+    path:'exercices/exo-tp-directives',
+    loadComponent:()=>import('./exercices/exo-tp-directives/exo-tp-directives').then(m=>m.ExoTpDirectives)
+  },
     //! ---------- Le système page Not Found ---------------------------------------------------------------------
   // Dans Angular il faut placer à la fin le path:'**'
   // ! check la doc si ya meilleure manière de faire ou plus simple ? aller explorer analog ?
