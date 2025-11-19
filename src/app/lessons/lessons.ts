@@ -25,7 +25,9 @@ export class Lessons {
     { name: 'Property Binding', path: 'property-binding' },
     { name: 'Event Binding', path: 'event-binding' },
     { name: 'Parent', path: 'parent' },
-    { name: 'Child', path: 'child' }
+    { name: 'Child', path: 'child' },
+    { name: 'Observables', path: 'observables' },
+    { name: 'Signals', path: 'signals' }
   ];
 
   constructor(private router: Router) {}

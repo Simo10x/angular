@@ -34,6 +34,14 @@ export const routes: Routes = [
     loadComponent:()=>import('./lessons/child/child.component').then(m=>m.ChildComponent)
   },
   {
+    path:'lessons/observables',
+    loadComponent:()=>import('./lessons/observables/observables').then(m=>m.Observables)
+  },
+  {
+    path:'lessons/signals',
+    loadComponent:()=>import('./lessons/signals/signals').then(m=>m.Signals)
+  },
+  {
     path:'exercices',
     loadComponent:()=>import('./exercices/exercices').then(m=>m.Exercices)
   },
