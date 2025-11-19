@@ -23,7 +23,9 @@ export class Lessons {
   lessons = [
     { name: 'Text Interpolation', path: 'text-interpolation' },
     { name: 'Property Binding', path: 'property-binding' },
-    { name: 'Event Binding', path: 'event-binding' }
+    { name: 'Event Binding', path: 'event-binding' },
+    { name: 'Parent', path: 'parent' },
+    { name: 'Child', path: 'child' }
   ];
 
   constructor(private router: Router) {}

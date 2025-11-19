@@ -26,6 +26,14 @@ export const routes: Routes = [
     loadComponent:()=>import('./lessons/event-binding/event-binding').then(m=>m.EventBinding)
   },
   {
+    path:'lessons/parent',
+    loadComponent:()=>import('./lessons/parent/parent.component').then(m=>m.ParentComponent)
+  },
+  {
+    path:'lessons/child',
+    loadComponent:()=>import('./lessons/child/child.component').then(m=>m.ChildComponent)
+  },
+  {
     path:'exercices',
     loadComponent:()=>import('./exercices/exercices').then(m=>m.Exercices)
   },
